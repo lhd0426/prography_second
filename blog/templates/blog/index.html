@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>My Blog</title>
+</head>
+<body>
+	<div>
+		<h1><a href="index.html">Blog home</a></h1>
+	</div>
+	<ol>
+		<h2>Title list</h2>
+		{% for blog in blogs %}
+		<li><a href="index.html?id={{ blog.title }}&text={{blog.textarea}}">{{ blog.title }}</a></li>
+		{% endfor %}
+    </ol>
+  
+<h2>{{title}}</h2>
+
+<p>{{text}}</p>
+
+
+</body>
+</html>
